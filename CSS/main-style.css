@@ -1,0 +1,283 @@
+@charset "utf-8";
+/* CSS Document */@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body
+{
+	background-color: #ADE2FF;
+			 color: #1A1A19; 
+			 font-family: "Montserrat", Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif';
+			 font-size: 16px
+}
+
+h1,h2,h3,h4,h5,h6{margin-top: 0; margin-bottom: 5px}
+
+h1.tentruong
+{
+	font-size: 5vw;
+	color: #DC730B
+}
+@media (min-width:1000px)
+{
+		h1.tentruong
+	{
+		font-size: 3vw;
+	}
+}
+h1
+{color: #001D77}
+h2
+{font-size: 30px;
+	font-family: "Quicksand", sans-serif;
+color: #F9FF00}
+
+h3
+{font-size: 32px;
+font-family: "Great Vibes"; color: #010101
+}
+h4
+{font-size:20px;
+	font-family: "Quicksand", sans-serif;
+	color: #000000
+}
+h6
+{font-size: 18px;
+	font-family: "Quicksand", sans-serif;
+	color: #F9FF00
+}
+h5.text-primary
+{font-size: 20px;
+	font-family: "Quicksand", sans-serif;
+	color: #F9FF00
+	
+}
+h6.text-primary
+{font-size:15px;
+	font-family: "Quicksand", sans-serif;
+	color: #FFF700
+}
+h7
+{font-size: 35px;
+	font-family: "Quicksand", sans-serif;
+	font-optical-sizing: auto;
+  font-weight: 558;
+  font-style: normal;
+	color: #0D077E
+}
+h8.text-primary
+{font-size: 20px;
+	font-family: "Quicksand", sans-serif;font-optical-sizing: auto;
+  font-weight: 558;
+  font-style: normal;
+	color: #F95406
+}
+p
+{font-size: 15px;
+	font-family: "Quicksand", sans-serif;
+	font-weight: 550
+}
+.container
+{
+	width: 80%;
+	margin: auto;
+	border: solid #00DBFF 2px
+}
+*{box-sizing: border-box} /*day vien va bo le vao trong cho he thong luoi*/
+.col-0 {width: 4.165%}
+.col-1 {width: 8.335%}
+.col-2 {width: 16.66%}
+.col-3 {width: 25%}
+.col-4 {width: 33.33%}
+.col-5 {width: 41.66%}
+.col-6 {width: 50%}
+.col-7 {width: 58.33%}
+.col-8 {width: 66.66%}
+.col-9 {width: 75%}
+.col-10 {width: 83.33%}
+.col-11 {width: 91,66%}
+.col-12 {width:91.66%}
+[class*="col-"]
+{
+	padding: 15px;
+	border: 1px
+}
+.row{
+	display: flex;flex-wrap: wrap}
+
+.col-3 .bg-light
+{
+	border-radius: 10px
+}
+
+
+/**/
+@media(min-width:600px)
+{
+	.col-md-1 {width: 8.335}
+	.col-md-2 {width: 16.66%}
+.col-md-3 {width: 25%}
+.col-md-4 {width: 33.33%}
+.col-md-5 {width: 41.66%}
+.col-md-6 {width: 50%}
+.col-md-7 {width: 58.33%}
+.col-md-8 {width: 66.66%}
+.col-md-9 {width: 75%}
+.col-md-10 {width: 83.33%}
+.col-md-11 {width: 91,66%}
+.col-md-12 {width:91.66%}
+
+}
+@media(min-width:1000px)
+{
+	.col-lg-1 {width: 8.335}
+.col-lg-2 {width: 16.66%}
+.col-lg-3 {width: 25%}
+.col-lg-4 {width: 33.33%}
+.col-lg-5 {width: 41.66%}
+.col-lg-6 {width: 50%}
+.col-lg-7 {width: 58.33%}
+.col-lg-8 {width: 66.66%}
+.col-lg-9 {width: 75%}
+.col-lg-10 {width: 83.33%}
+.col-lg-11 {width: 91,66%}
+.col-lg-12 {width:91.66%}
+	
+}
+
+.align-items-start{align-items: flex-start}/*sát trên*/
+.align-items-center{align-items: center}/*ở giữa chiều dọc*/
+.align-items-end{align-items: flex-end}/*sát chân*/
+
+
+
+
+
+/*--chỉnh cho ảnh full 100%*/
+.img-100{width: 100%; height: auto}
+/* style cho menu*/
+.btn-menu{
+	position: absolute; 
+	right: 0; top: 0;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 20px;
+	background-color: #EC0D8A;
+	border: none;
+	z-index: 2/*cho chỉ số layer lớn để button 3 gạch nằm trên menu*/
+    }
+ul.menu{
+	margin: 0;
+	padding: 0;
+	list-style: none; /*bỏ chấm đầu dòng*/
+	display: none
+}
+ul.menu li
+{
+	position: relative}
+ul.menu li a
+{
+	text-decoration: none; /*bỏ gạch chân*/
+	background-color: #3561D9;
+	color: #FDF7F7;
+	display: block;
+	padding: 10px;
+	margin: 1px
+}
+/*thiết bị từ 1000px trở lên thì style menu lại như bên dưới*/
+@media (min-width:1000px)
+{
+	.btn-menu{display: none}
+	ul.menu{
+		display: flex !important;/*xuất hiện lại menu đang ẩn và cho các list  nằm cạnh nhau*/
+		margin-top: 0
+	}
+}
+
+.text-center{text-align: center}
+.text-left{text-align:left}
+.text-right{text-align:right}
+.text-justify{text-align: justify}
+
+/*thư viện màu*/
+.bg-primary{background-color: #CAC9C9}
+.text-primary{color:#F73100;font-size: 30px}
+.bg-dark-10{background-color: rgba(192,192,192,1.00)}
+.bg-dark-20{background-color: rgba(0,0,0,0.2)}
+.bg-dark-30{background-color: rgba(0,0,0,0.3)}
+.bg-dark-40{background-color: rgba(0,0,0,0.4)}
+.text-light{color:aliceblue}
+.bg-light{background-color: #FFFFFF}
+
+footer{padding-top: 50px}
+.form-input
+{
+	width:100%;
+	border: 1px solid #EEEAEA;
+	padding: 8px;
+	border-radius: 10px 
+}
+.btn-primary
+{
+	background-color: #009EB1;
+	color: #FFFFFF;
+	padding: 5px 10px;
+	border: none;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 20px;
+	font-weight: 550;
+	font-size: 15px
+}
+
+.btn-primary:hover
+{
+	
+	background-color: #FFFFFF;
+	color: #009EB1;
+	padding: 5px 10px;
+	border: none;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 10px;
+	font-weight: 550;
+	font-size: 15px
+}
+
+.btn-secondary
+{
+	background-color: aqua;
+	color: #2E2626;
+	padding: 5px 10px;
+	cursor: cell
+}
+
+.align-items-start{align-items: flex-start}/*sát trên*/
+.align-items-center{align-items: center}/*ở giữa chiều dọc*/
+.align-items-end{align-items: flex-end}/*sát chân*/
+
+bsc-circle-oval
+{font-size: 10px}
+
+.rounded-box
+{border: 1px ; /* Viền của khung, bạn có thể thay đổi màu và độ dày */
+    border-radius: 10px; /* Độ bo góc, bạn có thể điều chỉnh giá trị này */
+    padding: 15px; /* Khoảng cách từ nội dung đến viền */
+    margin: 20px; /* Khoảng cách giữa các box */
+    background-color: #FFD8F1; /* Màu nền của box */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */;
+	width:auto}
+
+.bg-pink{background-color: #FFD8F1}
+.bg-blue{background-color: #569CFF}
+
+li
+{color: #000000;
+	font-weight: 500
+}
+
+.py-5 {
+  padding-top: 3rem !important;
+
+
+
+
+
+
